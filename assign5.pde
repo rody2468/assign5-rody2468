@@ -96,7 +96,6 @@ void initGame(){
 
 	// Initialize player
 	initPlayer();
-
 	// Initialize soilHealth
 	initSoils();
 
