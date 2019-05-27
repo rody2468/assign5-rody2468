@@ -572,8 +572,8 @@ boolean isHit(float ax, float ay, float aw, float ah, float bx, float by, float 
 }
 
 String convertFramesToTimeString(int frames){// Requirement #4
-    int min = frames / 60 /60 ;
-    int sec = (frames / 60 ) % 60 ;
+    int min = floor(frames / 60 /60) ;
+    int sec = floor((frames / 60 ) % 60 );
     String ssec = nf(sec, 2);
     String smin = nf(min, 2);
 	return smin + ":" + ssec;
